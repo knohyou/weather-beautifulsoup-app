@@ -1,5 +1,6 @@
-# Demonstration of a standalone bokeh document into a simple Flask application deployed on Heroku 
-Final product can be seen at https://simple-heroku-flask.herokuapp.com/.
+# Demonstration of a simple web scrapping from [National weather service](https://www.weather.gov/) using [Beautifulsoup](https://pypi.python.org/pypi/beautifulsoup4).
+Implement Flask web framework, bootstrap template, and deployed on Heroku 
+Final product can be seen at https://weather-beautifulsoup-app.herokuapp.com/.
 
 Follow instructions below to get the project running on your local machine and heroku. 
 
@@ -10,7 +11,7 @@ Follow instructions below to get the project running on your local machine and h
  
 ## Run initial test 
 Copy the project into local machine using ```git clone```
-```
+https://github.com/knohyou/weather-beautifulsoup-app.git```
 $ python app.py
 ```
 Test code on local machine by visiting http://localhost:5000
@@ -18,6 +19,7 @@ Test code on local machine by visiting http://localhost:5000
 ## First time Deploying on Heroku
 ```
 $ heroku create 
+$ git init
 $ git add .
 $ git commit -m "Commit" 
 $ git push heroku master
@@ -35,8 +37,7 @@ Open http://localhost:5000 in browser to see app running locally
 
 
 ## Acknowledgments
-Here are some additional resources and tutorials to follow
-
+[National weather service](https://www.weather.gov/)
 * https://github.com/bev-a-tron/MyFlaskTutorial
 * Bokeh code pulled from https://github.com/bokeh/bokeh/tree/master/examples/embed/simple
 
