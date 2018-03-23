@@ -1,5 +1,6 @@
 # Demonstration of a simple web scrapping from [National weather service](https://www.weather.gov/) using [Beautifulsoup](https://pypi.python.org/pypi/beautifulsoup4).
 Implement Flask web framework, bootstrap template, and deployed on Heroku 
+
 Final product can be seen at https://weather-beautifulsoup-app.herokuapp.com/.
 
 Follow instructions below to get the project running on your local machine and heroku. 
@@ -35,6 +36,13 @@ $ heroku local web -f Procfile.windows
 ```
 Open http://localhost:5000 in browser to see app running locally
 
+## Note
+```
+Need to change 
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+to the following for the CSS files to be read by Flask
+<link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+``` 
 
 ## Acknowledgments
 [National weather service](https://www.weather.gov/)
